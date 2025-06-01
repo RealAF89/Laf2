@@ -1,5 +1,19 @@
-import { Box, Container, Heading, Text, VStack, Image, IconButton, Flex, useColorModeValue, Badge } from '@chakra-ui/react'
-import { FaLaugh, FaShare, FaRegComment } from 'react-icons/fa'
+import { 
+  Box, 
+  Container, 
+  Heading, 
+  Text, 
+  VStack, 
+  Image, 
+  IconButton, 
+  Flex, 
+  useColorModeValue, 
+  Badge,
+  Button,
+  Spacer,
+  HStack
+} from '@chakra-ui/react'
+import { FaLaugh, FaShare, FaRegComment, FaHome, FaTrophy, FaUserCircle } from 'react-icons/fa'
 import Logo from './components/Logo'
 
 interface MemeCardProps {
@@ -26,6 +40,7 @@ const MemeCard = ({ imageUrl, title }: MemeCardProps) => {
       }}
       maxW="600px"
       w="100%"
+      mx="auto"
     >
       <Box position="relative">
         <Image 
@@ -83,25 +98,41 @@ const MemeCard = ({ imageUrl, title }: MemeCardProps) => {
   )
 }
 
+const Navigation = () => {
+  return (
+    <HStack spacing={4}>
+      <Button leftIcon={<FaHome />} variant="ghost" color="white" _hover={{ bg: 'blue.600' }}>
+        Home
+      </Button>
+      <Button leftIcon={<FaTrophy />} variant="ghost" color="white" _hover={{ bg: 'blue.600' }}>
+        Top
+      </Button>
+      <Button leftIcon={<FaUserCircle />} variant="ghost" color="white" _hover={{ bg: 'blue.600' }}>
+        Profile
+      </Button>
+    </HStack>
+  )
+}
+
 function App() {
   const bgColor = useColorModeValue('gray.50', 'gray.900')
   const headerBg = useColorModeValue('blue.500', 'blue.600')
 
   const memes = [
     { 
-      imageUrl: 'https://placehold.co/600x400?text=Funny+Meme+1', 
+      imageUrl: 'https://i.imgur.com/gw5YVhf.jpeg', 
       title: 'When the code works on the first try and you have no idea why' 
     },
     { 
-      imageUrl: 'https://placehold.co/600x400?text=Funny+Meme+2', 
+      imageUrl: 'https://i.imgur.com/ZHJAXOg.jpeg', 
       title: 'Developer Life: Expectations vs Reality - A never-ending story' 
     },
     { 
-      imageUrl: 'https://placehold.co/600x400?text=Funny+Meme+3', 
+      imageUrl: 'https://i.imgur.com/9MJklhx.jpeg', 
       title: 'That moment when you finally fix the bug that has been haunting you for days' 
     },
     { 
-      imageUrl: 'https://placehold.co/600x400?text=Funny+Meme+4', 
+      imageUrl: 'https://i.imgur.com/kCEhVHq.jpeg', 
       title: 'Me explaining my code to my rubber duck debugging assistant' 
     },
   ]
@@ -109,15 +140,15 @@ function App() {
   return (
     <Box minH="100vh" bg={bgColor}>
       <Box bg={headerBg} color="white" py={6} position="sticky" top={0} zIndex={10} shadow="md">
-        <Container maxW="container.lg">
-          <VStack align="center" spacing={3}>
+        <Container maxW="container.xl">
+          <Flex align="center" justify="space-between">
             <Logo />
-            <Text fontSize="lg" opacity={0.9}>Want a laugh?</Text>
-          </VStack>
+            <Navigation />
+          </Flex>
         </Container>
       </Box>
 
-      <Container maxW="container.md" py={8}>
+      <Container maxW="container.md" py={8} px={{ base: 4, md: 8 }}>
         <VStack spacing={8} align="stretch">
           {memes.map((meme, index) => (
             <MemeCard key={index} {...meme} />
