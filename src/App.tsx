@@ -120,20 +120,20 @@ function App() {
 
   const memes = [
     { 
-      imageUrl: 'https://i.imgur.com/gw5YVhf.jpeg', 
-      title: 'When the code works on the first try and you have no idea why' 
+      imageUrl: 'https://i.imgur.com/DKUR9Tk.jpeg', 
+      title: 'Every cat owner knows this struggle' 
     },
     { 
-      imageUrl: 'https://i.imgur.com/ZHJAXOg.jpeg', 
-      title: 'Developer Life: Expectations vs Reality - A never-ending story' 
+      imageUrl: 'https://i.imgur.com/6xXM9BN.jpeg', 
+      title: 'When you finally get to Friday and realize it\'s only Tuesday' 
     },
     { 
-      imageUrl: 'https://i.imgur.com/9MJklhx.jpeg', 
-      title: 'That moment when you finally fix the bug that has been haunting you for days' 
+      imageUrl: 'https://i.imgur.com/qqFh3SZ.jpeg', 
+      title: 'That moment you realize you left your phone in the other room' 
     },
     { 
-      imageUrl: 'https://i.imgur.com/kCEhVHq.jpeg', 
-      title: 'Me explaining my code to my rubber duck debugging assistant' 
+      imageUrl: 'https://i.imgur.com/H3BQTwX.jpeg', 
+      title: 'When someone asks if you want the last slice of pizza' 
     },
   ]
 
