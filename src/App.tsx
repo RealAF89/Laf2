@@ -120,21 +120,29 @@ function App() {
 
   const memes = [
     { 
-      imageUrl: 'https://i.imgur.com/DKUR9Tk.jpeg', 
-      title: 'Every cat owner knows this struggle' 
+      imageUrl: 'https://i.imgur.com/OQY3sXs.jpeg', 
+      title: 'When your friend says "just one more episode" at 2am' 
     },
     { 
-      imageUrl: 'https://i.imgur.com/6xXM9BN.jpeg', 
-      title: 'When you finally get to Friday and realize it\'s only Tuesday' 
+      imageUrl: 'https://i.imgur.com/N8ZL3Aj.jpeg', 
+      title: 'That face you make when someone says "we need to talk"' 
     },
     { 
-      imageUrl: 'https://i.imgur.com/qqFh3SZ.jpeg', 
-      title: 'That moment you realize you left your phone in the other room' 
+      imageUrl: 'https://i.imgur.com/MdWjRk4.jpeg', 
+      title: 'Me pretending to be a responsible adult' 
     },
     { 
-      imageUrl: 'https://i.imgur.com/H3BQTwX.jpeg', 
-      title: 'When someone asks if you want the last slice of pizza' 
+      imageUrl: 'https://i.imgur.com/YerBm2M.jpeg', 
+      title: 'When the waiter says "enjoy your meal" and you reply "you too"' 
     },
+    {
+      imageUrl: 'https://i.imgur.com/w5TxH7O.jpeg',
+      title: 'My plans vs The weather forecast'
+    },
+    {
+      imageUrl: 'https://i.imgur.com/PFZNc6l.jpeg',
+      title: 'When someone asks if I\'ve started my holiday shopping'
+    }
   ]
 
   return (
