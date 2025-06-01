@@ -10,7 +10,6 @@ import {
   useColorModeValue, 
   Badge,
   Button,
-  Spacer,
   HStack
 } from '@chakra-ui/react'
 import { FaLaugh, FaShare, FaRegComment, FaHome, FaTrophy, FaUserCircle } from 'react-icons/fa'
