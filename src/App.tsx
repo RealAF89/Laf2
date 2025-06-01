@@ -119,28 +119,28 @@ function App() {
 
   const memes = [
     { 
-      imageUrl: 'https://i.imgur.com/OQY3sXs.jpeg', 
-      title: 'When your friend says "just one more episode" at 2am' 
+      imageUrl: 'https://i.imgur.com/vvLhqHg.jpeg', 
+      title: 'When someone says they\'ll be ready in 5 minutes' 
     },
     { 
-      imageUrl: 'https://i.imgur.com/N8ZL3Aj.jpeg', 
-      title: 'That face you make when someone says "we need to talk"' 
+      imageUrl: 'https://i.imgur.com/p5KPdst.jpeg', 
+      title: 'My reaction to any minor inconvenience' 
     },
     { 
-      imageUrl: 'https://i.imgur.com/MdWjRk4.jpeg', 
-      title: 'Me pretending to be a responsible adult' 
+      imageUrl: 'https://i.imgur.com/JfLxDpC.jpeg', 
+      title: 'How I look waiting for my food delivery' 
     },
     { 
-      imageUrl: 'https://i.imgur.com/YerBm2M.jpeg', 
-      title: 'When the waiter says "enjoy your meal" and you reply "you too"' 
+      imageUrl: 'https://i.imgur.com/RUq0PZC.jpeg', 
+      title: 'Me trying to act natural when someone catches me dancing alone' 
     },
     {
-      imageUrl: 'https://i.imgur.com/w5TxH7O.jpeg',
-      title: 'My plans vs The weather forecast'
+      imageUrl: 'https://i.imgur.com/gDv2Ykf.jpeg',
+      title: 'When the GPS says "You have arrived" but you clearly haven\'t'
     },
     {
-      imageUrl: 'https://i.imgur.com/PFZNc6l.jpeg',
-      title: 'When someone asks if I\'ve started my holiday shopping'
+      imageUrl: 'https://i.imgur.com/NXyQnN8.jpeg',
+      title: 'Opening the fridge for the 10th time hoping food magically appeared'
     }
   ]
 
